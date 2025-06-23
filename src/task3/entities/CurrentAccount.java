@@ -16,7 +16,7 @@ public class CurrentAccount {
 
     public void withdrawMoney(double x) throws BankException {
         if (nMovements < maxMovements) balance = balance - x;
-        else if (balance <= 0) throw new BankException("Your account is overdrawn");
+        if (balance <= 0) throw new BankException("Your account is overdrawn");
         else balance = balance - x - 0.50;
 
         nMovements++;
