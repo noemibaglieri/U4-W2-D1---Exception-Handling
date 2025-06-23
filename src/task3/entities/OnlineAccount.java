@@ -2,10 +2,10 @@ package task3.entities;
 
 import task3.exceptions.BankException;
 
-public class onLineAccount extends CurrentAccount {
+public class OnlineAccount extends CurrentAccount {
     private double maxWithdraw;
 
-    public onLineAccount(String accountHolder, double balance, double maxW) {
+    public OnlineAccount(String accountHolder, double balance, double maxW) {
         super(accountHolder, balance);
         this.maxWithdraw = maxW;
     }
