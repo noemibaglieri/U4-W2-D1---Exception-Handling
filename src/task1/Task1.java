@@ -35,6 +35,7 @@ public class Task1 {
                 if(position <= 0 || position > numbers.length) {
 
                     System.out.println("This array position doesn't exist. Available positions: 1-5");
+                    System.out.println("What position of the array? (1-5)");
 
                 } else {
 
